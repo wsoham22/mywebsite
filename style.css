@@ -158,19 +158,15 @@ nav ul li a:hover:after{
 }
 .btn.btn-2{
     display: inline-block;
-    text-decoration: none;
-    color:#aeaeae;
+    text-decoration:underline;
+    color:#ec6161;
     font-size:15px;
-    background-color: red;
-    width:170px;
-    height:50px;
-    padding-top: 10px;
+    width:130px;
+    height:30px;
     border-radius: 5px;
     position: relative;
     bottom:240px;
     margin-left:6px;
-    padding:15px 10px;
-    padding-left:20px;
 }
 .btn.btn-3{
     display: inline-block;
@@ -178,13 +174,10 @@ nav ul li a:hover:after{
     color:#aeaeae;
     font-size:15px;
     background-color: red;
-    width:170px;
-    height:50px;
-    padding-top: 10px;
-    border-radius: 5px;
+    width:100px;
+    height:30px;
+    border-radius: 15px;
     margin-left:6px;
-    padding:15px 10px;
-    padding-left:20px;
 }
 .contact-right form{
     width:100%;   
@@ -209,7 +202,7 @@ form .btn2{
 /* adding responsiveness */
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/phone-background.png);
+        height: min-content;
     }
     .head-text{
         margin-top:100%;
@@ -267,3 +260,19 @@ form .btn2{
         flex-basis:100%;
     }
 }
+/* ... Your existing CSS ... */
+
+/* adding responsiveness */
+@media only screen and (max-width: 600px) {
+    /* ... Other existing styles ... */
+
+    .btn.btn-2 {
+        width: auto;
+        height:auto; /* Allow width to be determined by content */
+        padding: 10px 15px; /* Adjust padding as needed */
+        position: relative;
+        bottom: 0;
+        margin-left: 0;
+    }
+}
+
